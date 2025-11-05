@@ -50,7 +50,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; 2025 FintechApp. Hak Cipta Dilindungi.
+              &copy; 2025 FintechApp - RIFQI ACHYAR ❤️. Hak Cipta Dilindungi.
             </p>
 
             {/* Social Media Icons */}
