@@ -1,4 +1,5 @@
 // src/components/CTA.tsx
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -19,11 +20,12 @@ export default function CTA() {
             </p>
 
             <div className="mt-8">
-              <button 
+              <Link
+                href="/register"
                 className="bg-white hover:bg-gray-200 text-black font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
               >
                 Daftar Sekarang, Gratis!
-              </button>
+              </Link>
             </div>
           </div>
 

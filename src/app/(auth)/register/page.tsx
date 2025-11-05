@@ -127,6 +127,11 @@ export default function RegisterPage() {
           Login di sini
         </Link>
       </p>
+      <p className="mt-4 text-center text-xs text-gray-500">
+        <Link href="/" className="hover:underline transition-colors">
+          &larr; Kembali ke Landing Page
+        </Link>
+      </p>
     </div>
   );
 }

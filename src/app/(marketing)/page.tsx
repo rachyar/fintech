@@ -4,6 +4,7 @@
 import Features from "@/components/Features";
 import CTA from "@/components/CTA";
 import Pricing from "@/components/Pricing";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -37,11 +38,12 @@ export default function HomePage() {
           </p>
           
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <button 
+            <Link 
+              href="/register"
               className="bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105"
             >
               Coba Gratis
-            </button>
+            </Link>
             <button 
               className="border-2 border-gray-600 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300"
             >

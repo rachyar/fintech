@@ -2,18 +2,26 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import MobileNav from "@/components/MobileNav"; // <-- 1. Impor di sini
+import MobileNav from "@/components/MobileNav";
 
-export default function MarketingLayout({ children }: { children: React.ReactNode }) {
+// Ini adalah layout HANYA untuk grup (marketing)
+export default function MarketingLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <>
-      {/* 2. Tambahkan padding bawah di sini */}
-      <div className="mb-16 md:mb-0"> 
+      {/* Revisi dari Step 11:
+        Margin bawah untuk nav mobile kita pindah ke sini
+        agar hanya berlaku untuk marketing pages.
+      */}
+      <div className="mb-16 md:mb-0">
         <Navbar />
         {children}
         <Footer />
       </div>
-      <MobileNav /> {/* <-- 3. Render di sini */}
+      <MobileNav />
     </>
   );
 }

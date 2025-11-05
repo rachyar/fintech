@@ -1,4 +1,5 @@
 // src/components/Pricing.tsx
+import Link from "next/link";
 
 // Icon centang (check)
 const CheckIcon = () => (
@@ -45,9 +46,11 @@ export default function Pricing() {
                 <span>Hubungkan 1 Akun Bank</span>
               </li>
             </ul>
-            <button className="w-full border-2 border-gray-600 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition-colors">
+            <Link
+             href="/register"
+             className="w-full border-2 border-gray-600 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition-colors">
               Mulai Gratis
-            </button>
+            </Link>
           </div>
 
           {/* Paket 2: Pro (Populer) */}

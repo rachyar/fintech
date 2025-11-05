@@ -53,9 +53,12 @@ export default function Navbar() {
         </div>
 
         {/* CTA Button - Sembunyikan di mobile */}
-        <button className="hidden md:block bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-2 px-4 rounded-full transition-colors"> {/* <-- REVISI DI SINI */}
+        <Link 
+          href="/login" 
+          className="hidden md:block bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-2 px-4 rounded-full transition-colors"
+        >
           Mulai Sekarang
-        </button>
+        </Link>
 
       </nav>
     </header>
